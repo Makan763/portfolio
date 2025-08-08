@@ -1,0 +1,21 @@
+.hero {
+  min-height: 100vh; /* au lieu de 80vh ou 100vh */
+  background:
+    linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
+    url('/assets/images/photo-makan.jpg') center/cover no-repeat;
+  background-size: contain; /* toute l’image est visible */
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+/* Ajuste le cadrage selon la taille (tu peux changer 20%/30% selon ton visage/point d’intérêt) */
+@media (max-width: 576px) {
+  .hero { background-position: center 20%; }
+}
+@media (min-width: 992px) {
+  .hero { background-position: center 30%; }
+}
+
+/* Si navbar fixed-top Bootstrap, décale le contenu pour éviter qu’elle masque le hero */
+main { padding-top: 56px; }   /* ou 64/72px selon ta navbar */
