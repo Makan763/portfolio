@@ -8,14 +8,19 @@
   background-position: center;
 }
 
-
-/* Ajuste le cadrage selon la taille (tu peux changer 20%/30% selon ton visage/point d’intérêt) */
-@media (max-width: 576px) {
-  .hero { background-position: center 20%; }
-}
-@media (min-width: 992px) {
-  .hero { background-position: center 30%; }
+.hero-title {
+  font-size: 2rem; /* Taille par défaut */
+  line-height: 1.4;
 }
 
-/* Si navbar fixed-top Bootstrap, décale le contenu pour éviter qu’elle masque le hero */
-main { padding-top: 56px; }   /* ou 64/72px selon ta navbar */
+@media (min-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem; /* Tablette */
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero-title {
+    font-size: 3rem; /* Grand écran */
+  }
+}
