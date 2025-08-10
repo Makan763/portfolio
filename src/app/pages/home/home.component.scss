@@ -20,3 +20,13 @@
   font-size: clamp(1.4rem, 3.2vw, 2.4rem);
   line-height: 1.25;
 }
+
+.photo-adaptee {
+  width: 100%;
+  max-width: clamp(180px, 50vw, 320px); /* largeur adaptable */
+  height: clamp(180px, 50vw, 320px);    /* hauteur égale à la largeur pour un cercle parfait */
+  object-fit: cover;                    /* recadre sans déformation */
+  border-radius: 50%;                   /* cercle parfait */
+}
+
+
