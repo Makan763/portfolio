@@ -1,9 +1,13 @@
-<br>
-<header class="hero text-white d-flex align-items-center text-center">
+<header class="hero position-relative text-white d-flex align-items-center text-center">
+  <!-- Image de fond -->
+  <div class="hero-bg" aria-hidden="true">
+    <img src="assets/images/hero.jpg" alt="">
+  </div>
+
   <!-- Contenu -->
   <div class="container position-relative">
     <h1 class="fw-bold hero-title">
-      <span class="text-primary">Bienvenue sur ma page</span><br>
+      <span class="text-primary">Développeur Full-Stack Java / Angular & Ingénieur DevOps</span>
     </h1>
   </div>
 </header>
@@ -12,26 +16,25 @@
   <div class="container">
     <div class="row g-4 align-items-center">
       <div class="col-12 col-md-5 text-center">
-        <img src="assets/images/photo-makan.jpg" alt="Photo de Makan Diombana"
-          class="img-fluid rounded shadow photo-adaptee">
+        <img src="assets/images/photo-makan.jpg"
+             alt="Photo de Makan Diombana"
+             class="img-fluid rounded shadow photo-adaptee" loading="lazy">
       </div>
       <div class="col-12 col-md-7">
-        <h2 class="fw-bold mb-3">À PROPOS</h2>
+        <h2 class="fw-bold mb-3">À propos</h2>
         <p class="mb-3">
-          Je suis <strong>Makan DIOMBANA</strong>, développeur Full Stack Java / Angular et ingénieur DevOps,
-          avec presque 3 ans d’expérience. J’interviens de la conception au déploiement en
-          <strong>préproduction</strong> sur des applications web et desktop, et je mets en place des
+          J’ai presque 3 ans d’expérience en France, titulaire d’une Licence pro en Génie Logiciel (2017) puis d’un Master en Ingénierie Logicielle (2021).
+          J’interviens de la conception au déploiement en <strong>préproduction</strong> sur des applications web et desktop, et je mets en place des
           infrastructures <strong>cloud</strong>.
         </p>
         <p class="mb-4">
-          Expertise : <strong>Java 17 / Spring Boot</strong>, <strong>Angular 16</strong>, <strong>Docker</strong>,
-          <strong>Jenkins</strong>, <strong>Terraform</strong>, <strong>AWS</strong> <strong>(IAM | EC2 | S3 | RDS | VPC
-            | Security Group)</strong>,
+          Expertise&nbsp;: <strong>Java 17 / Spring Boot</strong>, <strong>Angular 16</strong>, <strong>Docker</strong>,
+          <strong>Jenkins</strong>, <strong>Terraform</strong>, <strong>AWS</strong>
+          <strong>(IAM · EC2 · S3 · RDS · VPC · Security Groups)</strong>,
           <strong>PostgreSQL / MySQL</strong>. Focus sur la qualité, la sécurité, le CI/CD et le clean code.
         </p>
         <div class="mt-4 d-flex gap-2 flex-wrap">
-          <a href="assets/CV-Makan-DIOMBANA.pdf" download class="btn btn-primary">📄 Télécharger mon CV</a>
-
+          <a class="btn btn-primary" href="#contact" aria-label="Aller à la section Contact"> Contactez-moi</a>
         </div>
       </div>
     </div>
@@ -40,15 +43,15 @@
 
 <section id="projects" class="py-5">
   <div class="container">
-    <h2 class="fw-bold text-center">PROJETS</h2>
+    <h2 class="fw-bold text-center">Projets</h2>
 
     <!-- Projet 1 -->
-    <div class="card my-4">
+    <article class="card my-4">
       <div class="card-header">Mars 2023 – Mars 2025</div>
       <div class="card-body">
-        <h5 class="card-title">Suivi de véhicules en location – Oken</h5>
+        <h3 class="card-title h5">Suivi de véhicules en location – Oken</h3>
         <p class="card-text text-start">
-          <strong>Objectif</strong> : Développer une application pour gérer la location et le suivi de véhicules.<br>
+          <strong>Objectif</strong> : Gérer la location et le suivi de véhicules.<br>
           <strong>Rôle</strong> : Analyse des besoins, développement backend et frontend, tests automatisés,
           conteneurisation, mise en place d’un proxy Apache, supervision avec Prometheus/Grafana.<br>
           <strong>Technos</strong> : Java 17 / Spring Boot 3.1.4, Angular 16, PostgreSQL, Docker, Apache,
@@ -56,13 +59,13 @@
           <strong>Statut</strong> : Déployé avec succès en <strong>préproduction</strong>.
         </p>
       </div>
-    </div>
+    </article>
 
     <!-- Projet 2 -->
-    <div class="card my-4">
+    <article class="card my-4">
       <div class="card-header">Juin 2022 – Février 2023</div>
       <div class="card-body">
-        <h5 class="card-title">Application de pointage – Kodemade</h5>
+        <h3 class="card-title h5">Application de pointage – Kodemade</h3>
         <p class="card-text text-start">
           <strong>Objectif</strong> : Créer une infrastructure cloud AWS pour héberger une application de pointage des
           collaborateurs.<br>
@@ -72,17 +75,16 @@
           <strong>Statut</strong> : Infrastructure livrée et déployée en <strong>préproduction</strong>.
         </p>
       </div>
-    </div>
+    </article>
 
     <!-- Projet 3 -->
-    <div class="card my-4">
+    <article class="card my-4">
       <div class="card-header">Juillet 2017 – Août 2019</div>
       <div class="card-body">
-        <h5 class="card-title">Applications de gestion pour PME – Prodevtechnologie</h5>
+        <h3 class="card-title h5">Applications de gestion pour PME – Prodevtechnologie</h3>
         <p class="card-text text-start">
           <strong>Objectif</strong> : Concevoir et développer plusieurs applications Java SE destinées à la gestion
-          opérationnelle de PME.<br>
-          <strong>Projets réalisés</strong> :
+          opérationnelle de PME.
         </p>
         <ul class="text-start mb-2">
           <li>Gestion de stock et de ventes</li>
@@ -98,7 +100,7 @@
           <strong>Statut</strong> : Solutions livrées et utilisées en <strong>préproduction locale</strong>.
         </p>
       </div>
-    </div>
+    </article>
   </div>
 </section>
 
@@ -110,24 +112,23 @@
     <div class="card my-3">
       <div class="card-header">Développement applicatif</div>
       <div class="card-body">
-        <h5 class="card-title">Backend</h5>
+        <h3 class="card-title h5">Backend</h3>
         <p class="card-text">
-          Java 17 / Spring Boot 3.1.4 | Angular 16 | Python (notions) | PostgreSQL | SQL | MySQL | UML | Merise<br>
-          MongoDB (notions) | NoSQL (notions) | Node.js (notions) | JavaScript (notions) | Vue.js (notions)
+          Java 17 / Spring Boot 3.1.4 · PostgreSQL · SQL · MySQL · UML · Merise<br>
+          Python (notions) · Node.js (notions)
         </p>
       </div>
       <div class="card-body">
-        <h5 class="card-title">Frontend</h5>
-        <p class="card-text">Angular | HTML / CSS | Bootstrap | TypeScript</p>
+        <h3 class="card-title h5">Frontend</h3>
+        <p class="card-text">Angular · TypeScript · HTML / CSS · Bootstrap · JavaScript (notions) · Vue.js (notions)</p>
       </div>
     </div>
 
     <!-- Test applicatif -->
     <div class="card my-3">
-      <div class="card-header">Test applicatif</div>
+      <div class="card-header">Tests applicatifs</div>
       <div class="card-body">
-        <p class="card-text">Tests unitaires (JUnit) | Tests d’intégrations (MockMvc) | Tests fonctionnels (Selenium)
-        </p>
+        <p class="card-text">Unitaires (JUnit) · Intégration (MockMvc) · Fonctionnels (Selenium)</p>
       </div>
     </div>
 
@@ -135,8 +136,8 @@
     <div class="card my-3">
       <div class="card-header">DevOps</div>
       <div class="card-body">
-        <p class="card-text">GitLab | Jenkins | Terraform | Ansible | Docker | Kubernetes (notions) |
-           Prometheus /Grafana | Proxmox VE</p>
+        <p class="card-text">GitLab · Jenkins · Terraform · Ansible · Docker · Kubernetes (notions) ·
+           Prometheus / Grafana · Proxmox VE</p>
       </div>
     </div>
 
@@ -144,7 +145,7 @@
     <div class="card my-3">
       <div class="card-header">Cloud</div>
       <div class="card-body">
-        <p class="card-text"> AWS (IAM | EC2 | S3 | RDS | VPC | Security Groups) | OVH (notions)</p>
+        <p class="card-text">AWS (IAM · EC2 · S3 · RDS · VPC · Security Groups) · OVH (notions)</p>
       </div>
     </div>
   </div>
@@ -155,10 +156,10 @@
     <h2 class="fw-bold">Contact</h2>
     <p class="mt-3">Intéressé par une collaboration ? Écrivez-moi ou appelez-moi.</p>
     <p class="mb-0">
-      📧 <a href="mailto:makandiombana2@gmail.com" class="text-white">makandiombana2@gmail.com</a>
+      📧 <a href="mailto:makandiombana2@gmail.com" class="text-white text-decoration-underline">makandiombana2@gmail.com</a>
     </p>
-    <p>
-      📞 <a href="tel:+33656821681" class="text-white">+33 6 56 82 16 81</a>
+    <p class="mb-0">
+      📞 <a href="tel:+33656821681" class="text-white text-decoration-underline">+33 6 56 82 16 81</a>
     </p>
   </div>
 </section>
