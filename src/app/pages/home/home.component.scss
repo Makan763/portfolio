@@ -17,15 +17,27 @@
   margin: 0;
 }
 
-/* PHOTO PROFIL */
-.photo-adaptee {
-  width: 100%;
-  height: 63vh;
-  max-width: clamp(180px, 50vw, 320px);
-  aspect-ratio: 1 / 1;          /* évite la déformation et remplace la hauteur fixe */
-  object-fit: cover;
+/* Avatar : taille max, toujours carré, recadrage centré */
+.avatar {
+  width: min(60vw, 220px);     /* petit écran: 60% largeur; max 220px */
+  aspect-ratio: 1 / 1;         /* carré garanti */
+  margin-inline: auto;
   border-radius: 50%;
+  overflow: hidden;            /* masque pour obtenir un cercle parfait */
+  box-shadow: 0 12px 30px rgba(0,0,0,.12);
 }
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;           /* recadre proprement */
+  display: block;
+}
+
+/* Fallback si un vieux navigateur ignore aspect-ratio */
+@supports not (aspect-ratio: 1 / 1) {
+  .avatar { width: 220px; height: 220px; }
+}
+
 
 /* Petits raffinements */
 .card-header { font-weight: 600; }
