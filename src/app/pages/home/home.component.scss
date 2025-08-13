@@ -3,18 +3,8 @@
   min-height: 78vh;
 }
 
-.hero-bg {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-}
 
-.hero-bg img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  filter: brightness(0.6);
-}
+
 
 .hero .container {
   position: relative;
@@ -30,6 +20,7 @@
 /* PHOTO PROFIL */
 .photo-adaptee {
   width: 100%;
+  height: 63vh;
   max-width: clamp(180px, 50vw, 320px);
   aspect-ratio: 1 / 1;          /* évite la déformation et remplace la hauteur fixe */
   object-fit: cover;
