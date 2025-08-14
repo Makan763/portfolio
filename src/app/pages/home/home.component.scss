@@ -42,3 +42,41 @@
 /* Petits raffinements */
 .card-header { font-weight: 600; }
 #projects .card + .card { margin-top: 1.25rem; }
+
+/* Grille responsive d'icônes */
+/* styles.scss */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(56px, 1fr));
+  gap: 14px 16px;
+  justify-items: center;
+}
+@media (min-width: 992px) {
+  .skills-grid { gap: 18px 22px; grid-template-columns: repeat(auto-fit, minmax(64px, 1fr)); }
+}
+
+
+/* Icône: carte légère avec fluidité */
+.tech {
+  width: 44px; height: 44px; padding: 6px;
+  border-radius: 12px; background:#fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,.06);
+  transition: transform .2s ease, box-shadow .2s ease, filter .2s ease;
+  object-fit: contain;
+}
+.tech:hover { transform: translateY(-3px) scale(1.05); box-shadow: 0 8px 20px rgba(0,0,0,.10); }
+
+.badge-chip {
+  padding: .35rem .6rem; border-radius: 999px; font-size:.8rem;
+  background:#eef2ff; border:1px solid rgba(0,0,0,.06);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.badge-chip:hover { transform: translateY(-2px); box-shadow: 0 6px 16px rgba(0,0,0,.08); }
+
+
+/* Petites optimisations mobiles */
+@media (prefers-color-scheme: dark) {
+  .tech { background:#1c1f23; box-shadow: 0 2px 8px rgba(0,0,0,.5); }
+  .badge-chip { background:#2a2f36; color:#e8eaed; border-color: rgba(255,255,255,.06); }
+}
+
