@@ -80,3 +80,6 @@
   .badge-chip { background:#2a2f36; color:#e8eaed; border-color: rgba(255,255,255,.06); }
 }
 
+/* Bandeau succès visible uniquement quand l'ancre #contact-sent est dans l'URL */
+#contact-sent { display: none; }
+#contact-sent:target { display: block; }

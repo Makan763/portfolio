@@ -25,8 +25,9 @@
           <strong>PostgreSQL / MySQL</strong>. Focus sur la qualité, la sécurité, le CI/CD et le clean code.
         </p>
         <div class="mt-4 d-flex gap-2 flex-wrap">
-          <a class="btn btn-primary" href="#contact" aria-label="Aller à la section Contact">Contactez-moi</a>
-
+          <a class="btn btn-primary" href="#contact" aria-label="Aller à la section Contact">
+            Contactez-moi
+          </a>
 
         </div>
       </div>
@@ -234,17 +235,33 @@
 
   </div>
 </section>
-
 <section id="contact" class="py-5 bg-dark text-white">
   <div class="container">
     <h2 class="fw-bold text-center">Contact</h2>
     <p class="mt-3 text-center">Intéressé par une collaboration ? Écrivez-moi directement ici.</p>
 
-    <form action="https://formspree.io/f/xnnzrzpa" method="POST" class="mt-4">
-      <input type="text" name="name" placeholder="Votre nom" required class="form-control mb-2">
-      <input type="email" name="_replyto" placeholder="Votre email" required class="form-control mb-2">
-      <textarea name="message" placeholder="Votre message" rows="5" required class="form-control mb-2"></textarea>
-      <button type="submit" class="btn btn-primary">Envoyer</button>
+    <!-- Bandeau succès (caché, visible quand URL = #contact-sent) -->
+    <p id="contact-sent" class="alert alert-success text-center mx-auto" style="max-width:600px;">
+      ✅ Message envoyé, merci !
+    </p>
+
+    <!-- Formulaire -->
+    <form action="https://formspree.io/f/xnnzrzpa" method="POST" class="mx-auto" style="max-width:600px;">
+      <input class="form-control mb-3" type="text" name="name" placeholder="Votre nom" required>
+      <input class="form-control mb-3" type="email" name="email" placeholder="Votre email" required>
+      <input class="form-control mb-3" type="text" name="_subject" placeholder="Sujet (optionnel)">
+      <textarea class="form-control mb-3" name="message" rows="5" placeholder="Votre message" required></textarea>
+
+      <!-- anti-spam -->
+      <input type="text" name="_gotcha" style="display:none">
+
+      <!-- redirection après succès -->
+      <input type="hidden" name="_next" value="https://www.makan-diombana.com/#contact">
+
+      <!-- qui reçoit en reply-to -->
+      <input type="hidden" name="_replyto" value="email">
+
+      <button type="submit" class="btn btn-primary w-100">Envoyer</button>
     </form>
 
 
