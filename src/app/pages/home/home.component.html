@@ -1,6 +1,5 @@
 <nav></nav>
-<br>
-<section id="about" class="py-5">
+<section id="about" class="mt-3">
   <div class="container">
     <div class="row g-4 align-items-center">
       <div class="col-12 col-md-5 text-center">
@@ -19,11 +18,18 @@
           infrastructures <strong>cloud</strong>.
         </p>
         <p class="mb-4">
-          Expertise&nbsp;: <strong>Java 17 / Spring Boot</strong>, <strong>Angular 16</strong>, <strong>Docker</strong>,
-          <strong>Jenkins</strong>, <strong>Terraform</strong>, <strong>AWS</strong>
-          <strong>(IAM · EC2 · S3 · RDS · VPC · Security Groups)</strong>,
-          <strong>PostgreSQL / MySQL</strong>. Focus sur la qualité, la sécurité, le CI/CD et le clean code.
+          Expertise :
+          <span class="badge-chip">Java 17</span>
+          <span class="badge-chip">Spring Boot</span>
+          <span class="badge-chip">Angular 16</span>
+          <span class="badge-chip">Docker</span>
+          <span class="badge-chip">Jenkins</span>
+          <span class="badge-chip">Terraform</span>
+          <span class="badge-chip">AWS (IAM • EC2 • S3 • RDS • VPC)</span>
+          <span class="badge-chip">PostgreSQL</span>
+          <span class="badge-chip">MySQL</span>
         </p>
+
         <div class="mt-4 d-flex gap-2 flex-wrap">
           <a class="btn btn-primary" href="#contact" aria-label="Aller à la section Contact">
             Contactez-moi
@@ -35,69 +41,72 @@
   </div>
 </section>
 
-<section id="projects" class="py-5">
-  <div class="container">
-    <h2 class="fw-bold text-center">Projets</h2>
+<section id="projects" class="mt-3">
+  <div class="container container-narrow">
+    <h2 class="section-title">Projets</h2>
+    <div class="timeline">
+      <!-- Projet 1 -->
+      <article class="card my-4">
+        <div class="card-header">Mars 2023 – Mars 2025</div>
+        <div class="card-body">
+          <h3 class="card-title h5">Suivi de véhicules en location – Oken</h3>
+          <p class="card-text text-start">
+            <strong>Objectif</strong> : Gérer la location et le suivi de véhicules.<br>
+            <strong>Rôle</strong> : Analyse des besoins, développement backend et frontend, tests automatisés,
+            conteneurisation, mise en place d’un proxy Apache, supervision avec Prometheus/Grafana.<br>
+            <strong>Technos</strong> : Java 17 / Spring Boot 3.1.4, Angular 16, PostgreSQL, Docker, Apache,
+            Prometheus/Grafana, Windows / Linux.<br>
+            <strong>Statut</strong> : Déployé avec succès en <strong>préproduction</strong>.
+          </p>
+        </div>
+      </article>
 
-    <!-- Projet 1 -->
-    <article class="card my-4">
-      <div class="card-header">Mars 2023 – Mars 2025</div>
-      <div class="card-body">
-        <h3 class="card-title h5">Suivi de véhicules en location – Oken</h3>
-        <p class="card-text text-start">
-          <strong>Objectif</strong> : Gérer la location et le suivi de véhicules.<br>
-          <strong>Rôle</strong> : Analyse des besoins, développement backend et frontend, tests automatisés,
-          conteneurisation, mise en place d’un proxy Apache, supervision avec Prometheus/Grafana.<br>
-          <strong>Technos</strong> : Java 17 / Spring Boot 3.1.4, Angular 16, PostgreSQL, Docker, Apache,
-          Prometheus/Grafana, Windows / Linux.<br>
-          <strong>Statut</strong> : Déployé avec succès en <strong>préproduction</strong>.
-        </p>
-      </div>
-    </article>
+      <!-- Projet 2 -->
+      <article class="card my-4">
+        <div class="card-header">Juin 2022 – Février 2023</div>
+        <div class="card-body">
+          <h3 class="card-title h5">Application de pointage – Kodemade</h3>
+          <p class="card-text text-start">
+            <strong>Objectif</strong> : Créer une infrastructure cloud AWS pour héberger une application de pointage des
+            collaborateurs.<br>
+            <strong>Rôle</strong> : Provisionnement AWS avec Terraform, automatisation des configurations avec Ansible,
+            CI/CD avec Jenkins, conteneurisation avec Docker, supervision Prometheus/Grafana.<br>
+            <strong>Technos</strong> : AWS, Terraform, Ansible, Jenkins, Docker, Windows / Linux.<br>
+            <strong>Statut</strong> : Infrastructure livrée et déployée en <strong>préproduction</strong>.
+          </p>
+        </div>
+      </article>
 
-    <!-- Projet 2 -->
-    <article class="card my-4">
-      <div class="card-header">Juin 2022 – Février 2023</div>
-      <div class="card-body">
-        <h3 class="card-title h5">Application de pointage – Kodemade</h3>
-        <p class="card-text text-start">
-          <strong>Objectif</strong> : Créer une infrastructure cloud AWS pour héberger une application de pointage des
-          collaborateurs.<br>
-          <strong>Rôle</strong> : Provisionnement AWS avec Terraform, automatisation des configurations avec Ansible,
-          CI/CD avec Jenkins, conteneurisation avec Docker, supervision Prometheus/Grafana.<br>
-          <strong>Technos</strong> : AWS, Terraform, Ansible, Jenkins, Docker, Windows / Linux.<br>
-          <strong>Statut</strong> : Infrastructure livrée et déployée en <strong>préproduction</strong>.
-        </p>
-      </div>
-    </article>
-
-    <!-- Projet 3 -->
-    <article class="card my-4">
-      <div class="card-header">Juillet 2017 – Août 2019</div>
-      <div class="card-body">
-        <h3 class="card-title h5">Applications de gestion pour PME – Prodevtechnologie</h3>
-        <p class="card-text text-start">
-          <strong>Objectif</strong> : Concevoir et développer plusieurs applications Java SE destinées à la gestion
-          opérationnelle de PME.
-        </p>
-        <ul class="text-start mb-2">
-          <li>Gestion de stock et de ventes</li>
-          <li>Gestion locative pour agences immobilières</li>
-          <li>Gestion des patients pour cliniques privées</li>
-          <li>Gestion des étudiants pour établissements scolaires</li>
-        </ul>
-        <p class="card-text text-start">
-          <strong>Rôle</strong> : Analyse des besoins clients, conception UML, développement Java SE, gestion de base de
-          données MySQL, tests et déploiement local.<br>
-          <strong>Technos</strong> : Java SE, Swing / JavaFX, MySQL, JasperReports, VBA / Access, SQL Server, Windows /
-          Linux, VirtualBox.<br>
-          <strong>Statut</strong> : Solutions livrées et utilisées en <strong>préproduction locale</strong>.
-        </p>
-      </div>
-    </article>
+      <!-- Projet 3 -->
+      <article class="card my-4">
+        <div class="card-header">Juillet 2017 – Août 2019</div>
+        <div class="card-body">
+          <h3 class="card-title h5">Applications de gestion pour PME – Prodevtechnologie</h3>
+          <p class="card-text text-start">
+            <strong>Objectif</strong> : Concevoir et développer plusieurs applications Java SE destinées à la gestion
+            opérationnelle de PME.
+          </p>
+          <ul class="text-start mb-2">
+            <li>Gestion de stock et de ventes</li>
+            <li>Gestion locative pour agences immobilières</li>
+            <li>Gestion des patients pour cliniques privées</li>
+            <li>Gestion des étudiants pour établissements scolaires</li>
+          </ul>
+          <p class="card-text text-start">
+            <strong>Rôle</strong> : Analyse des besoins clients, conception UML, développement Java SE, gestion de base
+            de
+            données MySQL, tests et déploiement local.<br>
+            <strong>Technos</strong> : Java SE, Swing / JavaFX, MySQL, JasperReports, VBA / Access, SQL Server, Windows
+            /
+            Linux, VirtualBox.<br>
+            <strong>Statut</strong> : Solutions livrées et utilisées en <strong>préproduction locale</strong>.
+          </p>
+        </div>
+      </article>
+    </div>
   </div>
 </section>
-<section id="skills" class="py-5 bg-light">
+<section id="skills" class="mt-3">
   <div class="container">
     <h2 class="fw-bold text-center mb-4">Compétences</h2>
 
@@ -235,36 +244,30 @@
 
   </div>
 </section>
-<section id="contact" class="py-5 bg-dark text-white">
-  <div class="container">
-    <h2 class="fw-bold text-center">Contact</h2>
-    <p class="mt-3 text-center">Intéressé par une collaboration ? Écrivez-moi directement ici.</p>
+<section id="contact">
 
-    <!-- Bandeau succès (caché, visible quand URL = #contact-sent) -->
+  <div class="container container-narrow">
+    <h2 class="section-title">Contact</h2>
+    <p class="text-center lead-muted">Écrivez-moi.</p>
+
     <p id="contact-sent" class="alert alert-success text-center mx-auto" style="max-width:600px;">
       ✅ Message envoyé, merci !
     </p>
 
-    <!-- Formulaire -->
-    <form action="https://formspree.io/f/xnnzrzpa" method="POST" class="mx-auto" style="max-width:600px;">
-      <input class="form-control mb-3" type="text" name="name" placeholder="Votre nom" required>
-      <input class="form-control mb-3" type="email" name="email" placeholder="Votre email" required>
-      <input class="form-control mb-3" type="text" name="_subject" placeholder="Sujet (optionnel)">
-      <textarea class="form-control mb-3" name="message" rows="5" placeholder="Votre message" required></textarea>
-
-      <!-- anti-spam -->
-      <input type="text" name="_gotcha" style="display:none">
-
-      <!-- redirection après succès -->
-      <input type="hidden" name="_next" value="https://www.makan-diombana.com/#contact">
-
-      <!-- qui reçoit en reply-to -->
-      <input type="hidden" name="_replyto" value="email">
-
-      <button type="submit" class="btn btn-primary w-100">Envoyer</button>
-    </form>
+    <div class="card mx-auto p-4" style="max-width:640px;">
+   <form action="https://script.google.com/macros/s/AKfycbxA6IF2c8oAVlRg99lL8FwK-ne_dlKByDzmwdraffjK2jwjUEAmIMTTWZGXSC5Kvp8T/exec"
+      method="POST" class="mx-auto" style="max-width:600px;">
+  <input class="form-control mb-3" type="text"  name="name"  autocomplete="name"  placeholder="Votre nom" required>
+  <input class="form-control mb-3" type="email" name="email" autocomplete="email" placeholder="Votre email" required>
+  <input class="form-control mb-3" type="text"  name="_subject" placeholder="Sujet (optionnel)">
+  <input type="hidden" name="redirect" value="https://www.makan-diombana.com/#contact-sent">
+  <input type="text" name="_gotcha" style="display:none"> <!-- honeypot anti-spam -->
+  <textarea class="form-control mb-3" name="message" rows="5" placeholder="Votre message" required></textarea>
+  <button type="submit" class="btn btn-primary w-100">Envoyer</button>
+</form>
 
 
+    </div>
     <p class="mt-4 text-center mb-0">
       📧 <a href="mailto:makandiombana2@gmail.com"
         class="text-white text-decoration-underline">makandiombana2@gmail.com</a><br>
