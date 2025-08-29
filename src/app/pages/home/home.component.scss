@@ -111,3 +111,33 @@
 }
 .site-footer .links a{ color:#e5e7eb; opacity:.9; }
 .site-footer .links a:hover{ opacity:1; text-decoration:underline; }
+/* ===== Largeurs cohérentes pour toutes les sections ===== */
+#about > .container,
+#projects > .container,
+#skills > .container,
+#contact > .container,
+.site-footer > .container {
+  max-width: 1120px;  /* ajuste à 1040 / 1200 selon ton goût */
+}
+
+/* Si tu as encore .container-narrow quelque part, on le neutralise */
+.container-narrow { max-width: inherit !important; }
+
+/* ===== Timeline: même bord gauche que les autres blocs ===== */
+.timeline { padding-left: 1.25rem; }
+.timeline::before { left: .25rem; }
+.timeline .card { margin-left: 0; }          /* plus d’indentation parasite */
+.timeline .card::before { left: -1.25rem; }  /* le point reste en marge */
+
+/* ===== Contact: carte centrée mais pas plus étroite que le reste ===== */
+#contact .card {
+  max-width: 720px;      /* lisible, mais tu peux passer à 100% si tu veux strictement la même largeur */
+  width: 100%;
+  margin-inline: auto;
+}
+
+/* Option confort lecture (facultatif) */
+.prose { max-width: 68ch; }
+#about p { /* si tu veux limiter la largeur des paragraphes uniquement */
+  /* @extend .prose;  → décommente si tu utilises SCSS avancé */
+}
