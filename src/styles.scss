@@ -1,4 +1,90 @@
-html, body { height: 100%; margin: 0; }
-body { display: flex; flex-direction: column; }
-app-root { display: flex; flex-direction: column; flex: 1; }
-main { flex: 1; }
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+
+/* ===== Couleurs & surfaces (Light par défaut) ===== */
+:root{
+  /* Marque */
+  --brand:#4f46e5;           /* indigo */
+  --brand-2:#22c55e;         /* accent vert */
+  --brand-contrast:#fff;
+
+  /* Texte */
+  --ink:#0f172a;             /* slate-900 */
+  --muted:#64748b;           /* slate-500 */
+
+  /* Surfaces / arrière-plans */
+  --bg:#f6f7fb;              /* fond page clair */
+  --bg-hero-from:#f8fafc;
+  --bg-hero-to:#eef2ff;
+
+  --surface:#ffffff;         /* carte/inputs */
+  --surface-2:#f1f5f9;       /* headers cartes */
+
+  /* UI */
+  --radius:18px;
+  --shadow:0 10px 30px rgba(2,6,23,.08);
+  --nav-bg:rgba(255,255,255,.75);
+  --footer-bg:#0f172a;
+  --footer-ink:#e5e7eb;
+}
+
+@media (prefers-color-scheme:dark){
+  :root{
+    --brand:#6366f1;           /* indigo 500 un peu + lumineux */
+    --brand-2:#22c55e;
+
+    --ink:#e5e7eb;
+    --muted:#94a3b8;
+
+    --bg:#0b1220;              /* fond page sombre élégant */
+    --bg-hero-from:#0b1220;
+    --bg-hero-to:#0b1220;
+
+    --surface:#121826;         /* cartes */
+    --surface-2:#0f172a;       /* headers cartes */
+
+    --nav-bg:rgba(2,6,23,.7);  /* navbar verre dépoli sombre */
+    --footer-bg:#0b1220;
+    --footer-ink:#e5e7eb;
+  }
+}
+
+/* ===== Base ===== */
+html{ scroll-behavior:smooth; }
+body{
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial;
+  color:var(--ink);
+  background:
+    linear-gradient(180deg,var(--bg-hero-from), var(--bg-hero-to) 520px, var(--bg) 521px);
+}
+h1,h2,h3{ letter-spacing:.2px; }
+.section-title{ font-weight:800; text-align:center; margin-bottom:2rem; color:var(--ink); }
+.container-narrow{ max-width:980px; margin-inline:auto; }
+.lead-muted{ color:var(--muted); }
+section{ padding-block: clamp(2rem, 5vw, 3.5rem); }
+
+/* Boutons cohérents */
+.btn-primary{
+  background-color:var(--brand)!important;
+  border-color:var(--brand)!important; color:var(--brand-contrast)!important;
+  border-radius:999px; padding:.7rem 1.1rem; font-weight:700;
+  box-shadow:0 6px 16px rgba(79,70,229,.28);
+  transition:transform .15s ease, box-shadow .2s ease;
+}
+.btn-primary:hover{ transform:translateY(-2px); box-shadow:0 12px 26px rgba(79,70,229,.34); }
+
+.btn-outline-secondary{
+  border-radius:999px; padding:.7rem 1.1rem; font-weight:700;
+  border-color:rgba(100,116,139,.35)!important; color:var(--ink)!important;
+  background:transparent;
+}
+@media (prefers-color-scheme:dark){
+  .btn-outline-secondary{ color:#e5e7eb!important; border-color:rgba(148,163,184,.35)!important; }
+}
+.btn-outline-secondary:hover{ background:var(--surface-2); }
+
+/* Inputs */
+.form-control{ border-radius:12px; border:1px solid rgba(100,116,139,.25); }
+
+/* Utilitaires cartes */
+.card{ border:0; border-radius:var(--radius); background:var(--surface); box-shadow:var(--shadow); }
+.card-header{ background:var(--surface-2); border:0; font-weight:700; color:var(--ink); }

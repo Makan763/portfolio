@@ -1,16 +1,17 @@
-
 nav.navbar{
-  backdrop-filter:saturate(1.2) blur(6px);
-  background-color:rgba(42, 65, 100, 0.6)!important;
-  box-shadow:0 6px 20px rgba(0,0,0,.06);
+  backdrop-filter:saturate(1.1) blur(8px);
+  background-color: var(--nav-bg) !important;
+  box-shadow: 0 6px 20px rgba(0,0,0,.06);
+}
+.navbar .navbar-brand{ letter-spacing:.5px; color:var(--ink)!important; }
+.navbar .nav-link{
+  color:var(--ink)!important; opacity:.85; font-weight:600; position:relative;
+  transition:opacity .2s ease, color .2s ease;
 }
 @media (prefers-color-scheme:dark){
-  nav.navbar{ background-color:rgba(18,24,38,.6)!important; }
+  .navbar .navbar-brand, .navbar .nav-link{ color:#e5e7eb!important; }
 }
-.navbar .nav-link{
-  font-weight:600; opacity:.8; position:relative;
-}
-.navbar .nav-link:hover,
+.navbar .nav-link:hover{ opacity:1; color:var(--brand)!important; }
 .navbar .nav-link.active{ opacity:1; color:var(--brand)!important; }
 .navbar .nav-link.active::after{
   content:""; position:absolute; left:.5rem; right:.5rem; bottom:-6px;

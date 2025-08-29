@@ -1,1 +1,7 @@
-/* style footer si besoin */
+.site-footer{
+  background:var(--footer-bg); color:var(--footer-ink);
+  border-top:1px solid rgba(255,255,255,.06);
+  padding-block:1rem; font-size:.95rem;
+}
+.site-footer .links a{ color:var(--footer-ink); opacity:.9; }
+.site-footer .links a:hover{ opacity:1; text-decoration:underline; }
